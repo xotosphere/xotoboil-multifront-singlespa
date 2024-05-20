@@ -1,0 +1,55 @@
+{
+	"name": "@xotoboil-multifront/multiframework-frontends",
+	"version": "0.0.0",
+	"description": "global multiframework",
+	"license": "ISC",
+	"private": true,
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"registries/*"
+		]
+	},
+	"scripts": {
+		"boot": "yarn initialize && yarn build",
+		"start": "turbo run start --filter=./packages/*",
+		"build": "turbo run build --filter=./registries/*",
+		"clean": "turbo run clean",
+		"start:shell": "yarn workspace @xotoboil-multifront/shell run start",
+		"start:portal": "yarn workspace @xotoboil-multifront/portal run start",
+		"start:app1": "yarn workspace @xotoboil-multifront/app1 run start",
+		"start:app2": "yarn workspace @xotoboil-multifront/app2 run start",
+		"start:app3": "yarn workspace @xotoboil-multifront/app3 run start",
+		"initialize": "yarn install --legacy-peer-deps",
+		"lint:es": "eslint -f codeframe --ignore-path .eslintignore --fix",
+		"lint:style": "stylelint --config .stylelintrc.js --fix",
+		"lint:prettify": "prettier --config .prettierrc.js --ignore-path .prettierignore --write .",
+		"test": "turbo run test --concurrency=1",
+		"test:e2e": "yarn workspace @xotoboil-multifront/* run test:e2e"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.0.3",
+		"@types/node": "18.11.3",
+		"@typescript-eslint/eslint-plugin": "^5.3.0",
+		"@typescript-eslint/parser": "^5.3.0",
+		"eslint": "^8.2.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-formatter-codeframe": "^7.32.1",
+		"eslint-plugin-jest": "^25.2.3",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-unused-imports": "^1.1.5",
+		"jest": "^28.1.3",
+		"prettier": "^2.4.1",
+		"stylelint": "^14.0.1",
+		"stylelint-config-standard": "^23.0.0",
+		"stylelint-order": "^5.0.0",
+		"stylelint-scss": "^4.0.0",
+		"ts-jest": "^29.0.3",
+		"turbo": "^1.6.3",
+		"typescript": "^4.8.4"
+	},
+	"dependencies": {
+		"zone.js": "^0.12.0"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"noImplicitAny": false,
+		"removeComments": true,
+		"noLib": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"sourceMap": true,
+		"outDir": "./lib",
+		"lib": ["dom", "es2020"],
+		"module": "es2015",
+		"moduleResolution": "node",
+		"target": "es2017",
+		"strict": false,
+		"skipLibCheck": true
+	},
+	"include": ["./src/**/*.ts"],
+	"exclude": ["node_modules", "**/*.spec.ts", "**/__tests__/**"]
+}

@@ -1,0 +1,25 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"baseUrl": ".",
+		"outDir": "./dist/out-tsc",
+		"sourceMap": true,
+		"declaration": false,
+		"types": ["jest", "node"],
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"target": "es2015",
+		"module": "es2015",
+		"moduleResolution": "node",
+		"lib": ["es2018", "dom"],
+		"strict": false,
+		"paths": {
+			"@angular/*": ["./node_modules/@angular/*"],
+			"@/*": ["src/*"]
+		}
+	},
+
+	"include": ["src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts", "tests/**/*.tsx"],
+	"exclude": ["node_modules"]
+}

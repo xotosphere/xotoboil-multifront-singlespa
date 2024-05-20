@@ -1,0 +1,6 @@
+version: "3"
+services:
+    ui-vue:
+        build: ./
+        container_name: ui-vue
+        image: ui-vue

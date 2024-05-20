@@ -1,0 +1,22 @@
+:host {
+	display: block;
+}
+
+.btn {
+	border: none;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: color 0.2s, box-shadow 0.2s, padding 0.2s, border-radius 0.2s, background-color 0.2s, border-color 0.2s, border-width 0.2s;
+}
+
+.btn-primary {
+	color: #000;
+	background: #fbbe00;
+	&:hover {
+		background: none;
+		color: #fbbe00;
+	}
+}

@@ -1,0 +1,6 @@
+version: "3"
+services:
+    ui-react:
+        build: ./
+        container_name: ui-react
+        image: ui-react

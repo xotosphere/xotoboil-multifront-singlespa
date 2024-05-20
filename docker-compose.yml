@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+    common:
+        extends:
+            file: /registries/common/docker-compose.yml
+            service: common
+    ui:
+        extends:
+            file: /registries/ui/docker-compose.yml
+            service: ui
+    ui-angular:
+        extends:
+            file: /registries/ui-angular/docker-compose.yml
+            service: ui-angular
+    ui-react:
+        extends:
+            file: /registries/ui-react/docker-compose.yml
+            service: ui-react
+    ui-vue:
+        extends:
+            file: /registries/ui-vue/docker-compose.yml
+            service: ui-vue
+
+    app1:
+        extends:
+            file: /packages/app1/docker-compose.yml
+            service: app1
+
+    app2:
+        extends:
+            file: /packages/app2/docker-compose.yml
+            service: app2
+
+    app3:
+        extends:
+            file: /packages/app3/docker-compose.yml
+            service: app3
+
+    portal:
+        extends:
+            file: /packages/portal/docker-compose.yml
+            service: portal
+
+    shell:
+        extends:
+            file: /packages/shell/docker-compose.yml
+            service: shell

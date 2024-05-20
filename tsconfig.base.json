@@ -1,0 +1,17 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"skipLibCheck": true,
+		"target": "esnext",
+		"noImplicitAny": false,
+		"strictPropertyInitialization": false,
+		"moduleResolution": "node",
+		"baseUrl": "./",
+		"types": ["jest", "node"],
+		"allowSyntheticDMefaultImports": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true
+	}
+}

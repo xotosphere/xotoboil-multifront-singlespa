@@ -1,0 +1,8 @@
+version: "3"
+services:
+    app3:
+        build: ./
+        container_name: app3
+        image: app3
+        ports:
+            - 8083:80

@@ -1,0 +1,8 @@
+version: "3"
+services:
+    portal:
+        build: ./
+        container_name: portal
+        image: portal
+        ports:
+            - 8084:80

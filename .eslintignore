@@ -1,0 +1,20 @@
+# Dependency directories
+/**/.angular
+/**/node_modules
+/**/lib
+/**/dist
+/**/react-component-lib
+/**/angular-component-lib
+/**/vue-component-lib
+
+# IGNORE ALL HTML FILES:
+*.html
+
+*.tsbuildinfo
+*.md
+
+# CUSTOM
+packages/shell/src/utils/system.js
+registries/ui-angular/*
+registries/ui-vue/*
+registries/ui-react/*

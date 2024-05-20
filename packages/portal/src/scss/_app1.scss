@@ -1,0 +1,13 @@
+#single-spa-application\:app1 {
+	background-color: lightgray;
+	max-width: fit-content;
+	margin: auto;
+}
+
+.action {
+	display: grid;
+	place-items: center;
+	grid-auto-flow: column;
+	grid-gap: 1em;
+	padding: 0.5em;
+}

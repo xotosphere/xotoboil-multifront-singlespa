@@ -1,0 +1,37 @@
+{
+	"name": "@xotoboil-multifront/shell",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"start": "webpack-cli serve --config config/webpack.dev.js",
+		"build": "webpack --config config/webpack.prod.js",
+		"serve": "serve dist",
+		"test": "jest src --passWithNoTests --maxWorkers=50%",
+		"test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage",
+		"clean": "rm -rf dist && rm -rf lib"
+	},
+	"dependencies": {
+		"single-spa": "^5.9.4",
+		"systemjs": "^6.11.0"
+	},
+	"devDependencies": {
+		"@xotoboil-multifront/ui": "*",
+		"@babel/core": "^7.16.0",
+		"@babel/plugin-transform-runtime": "^7.16.0",
+		"@babel/preset-env": "^7.16.0",
+		"@babel/runtime": "^7.16.0",
+		"babel-loader": "^8.2.3",
+		"clean-webpack-plugin": "^4.0.0",
+		"dotenv": "^10.0.0",
+		"html-webpack-plugin": "^5.5.0",
+		"jest": "^28.1.3",
+		"typescript": "^4.8.4",
+		"semver": "^7.3.5",
+		"serve": "^13.0.2",
+		"webpack": "^5.62.1",
+		"webpack-cli": "^4.9.1",
+		"webpack-dev-server": "^4.4.0",
+		"webpack-merge": "^5.8.0",
+		"ts-loader": "^9.2.6"
+	}
+}

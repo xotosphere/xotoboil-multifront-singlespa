@@ -1,0 +1,6 @@
+version: "3"
+services:
+    ui-angular:
+        build: ./
+        container_name: ui-angular
+        image: ui-angular

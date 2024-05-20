@@ -1,0 +1,21 @@
+{
+	"name": "@xotoboil-multifront/ui-vue",
+	"version": "0.0.0",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"start": "echo starting",
+		"build": "yarn tsc",
+		"tsc": "tsc -p .",
+		"clean": "rm -rf dist && rm -rf lib"
+	},
+	"peerDependencies": {
+		"@xotoboil-multifront/ui": "*"
+	},
+	"dependencies": {
+		"vue": "^3.0.0"
+	},
+	"devDependencies": {
+		"@xotoboil-multifront/ui": "*"
+	}
+}

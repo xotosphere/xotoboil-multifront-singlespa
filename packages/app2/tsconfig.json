@@ -1,0 +1,17 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"baseUrl": ".",
+		"sourceMap": true,
+		"strict": false,
+		"types": ["jest", "node", "react-dom", "react", "@testing-library/jest-dom"],
+		"jsx": "react",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"skipDefaultLibCheck": true
+	},
+	"include": ["src/**/*"]
+}

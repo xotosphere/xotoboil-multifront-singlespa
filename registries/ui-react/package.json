@@ -1,0 +1,25 @@
+{
+	"name": "@xotoboil-multifront/ui-react",
+	"version": "0.0.0",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"start": "echo starting",
+		"build": "yarn tsc",
+		"tsc": "tsc -p .",
+		"clean": "rm -rf dist && rm -rf lib"
+	},
+	"peerDependencies": {
+		"@xotoboil-multifront/ui": "*"
+	},
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@xotoboil-multifront/ui": "*",
+		"@types/react-dom": "^18.0.8",
+		"@types/react": "^18.0.24",
+		"@types/node": "18.11.3"
+	}
+}
