@@ -1,2 +1,2 @@
-export * from "./classes/GlobalStore";
-export * from "./classes/GlobalEventDistributor";
+export * from "./classes/CrossStore";
+export * from "./classes/CrossEventDistributor";

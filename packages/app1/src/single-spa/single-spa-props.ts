@@ -1,13 +1,13 @@
-import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
+import { CrossEventDistributor } from "@xotoboil-multifront-singlespa/cross";
 import { ReplaySubject } from "rxjs";
 import { AppProps } from "single-spa";
 
 export const singleSpaPropsSubject: ReplaySubject<SingleSpaProps> = new ReplaySubject<SingleSpaProps>(1);
 
-export let globalEventDistributor: GlobalEventDistributor;
+export let crossEventDistributor: CrossEventDistributor;
 
 singleSpaPropsSubject.subscribe((data: any) => {
-	if (data && data.globalEventDistributor) globalEventDistributor = data.globalEventDistributor;
+	if (data && data.crossEventDistributor) crossEventDistributor = data.crossEventDistributor;
 });
 
 /**
@@ -16,5 +16,5 @@ singleSpaPropsSubject.subscribe((data: any) => {
  */
 
 export type SingleSpaProps = AppProps & {
-	globalEventDistributor: GlobalEventDistributor;
+	crossEventDistributor: CrossEventDistributor;
 };

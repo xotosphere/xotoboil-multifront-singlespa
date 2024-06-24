@@ -12,7 +12,7 @@ import { AppComponent } from "@/app/app.component";
 import { EmptyRouteComponent } from "@/app/pages/empty-route/empty-route-component";
 import { CounterComponent } from "@/app/components/counter/counter.component";
 import { CommonModule } from "@angular/common";
-import { UiLibrary } from "@xotoboil-singlespa-multifront/ui-angular";
+import { UiLibrary } from "@xotoboil-multifront-singlespa/ui-angular";
 
 @NgModule({
 	declarations: [AppComponent, EmptyRouteComponent, CounterComponent],

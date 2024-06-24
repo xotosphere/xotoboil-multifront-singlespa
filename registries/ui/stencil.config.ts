@@ -6,7 +6,7 @@ import { reactOutputTarget } from "@stencil/react-output-target";
 
 export const config: Config = {
 	namespace: "stencil-components",
-	globalStyle: "src/global/global.css ",
+	globalStyle: "src/cross/cross.css ",
 	outputTargets: [
 		{
 			type: "dist",
@@ -20,16 +20,16 @@ export const config: Config = {
 			],
 		},
 		vueOutputTarget({
-			componentCorePackage: "@xotoboil-singlespa-multifront/ui",
+			componentCorePackage: "@xotoboil-multifront-singlespa/ui",
 			proxiesFile: "../ui-vue/src/components.ts",
 		}),
 		angularOutputTarget({
-			componentCorePackage: "@xotoboil-singlespa-multifront/ui",
+			componentCorePackage: "@xotoboil-multifront-singlespa/ui",
 			directivesProxyFile: "../ui-angular/src/components.ts",
 			directivesArrayFile: "../ui-angular/src/directives.ts",
 		}),
 		reactOutputTarget({
-			componentCorePackage: "@xotoboil-singlespa-multifront/ui",
+			componentCorePackage: "@xotoboil-multifront-singlespa/ui",
 			proxiesFile: "../ui-react/src/index.ts",
 			includeDefineCustomElements: true,
 		}),

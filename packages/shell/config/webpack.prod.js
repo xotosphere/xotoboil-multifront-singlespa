@@ -3,7 +3,7 @@ const { merge } = require("webpack-merge");
 var path = require("path");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const commonConfig = require("./webpack.common");
+const crossConfiguration = require("./webpack.common");
 const deps = require("../package.json").dependencies;
 __webpack_base_uri__ = "http://localhost:8080";
 
@@ -35,4 +35,4 @@ const prodConfig = {
 	],
 };
 
-module.exports = merge(commonConfig, prodConfig);
+module.exports = merge(crossConfiguration, prodConfig);

@@ -2,8 +2,8 @@ import singleSpaVue, { SingleSpaVueLifecycles } from "single-spa-vue";
 import { h, createApp } from "vue";
 import App from "./App.vue";
 import store from "./store";
-import { ComponentLibrary } from "@xotoboil-singlespa-multifront/ui-vue";
-import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
+import { ComponentLibrary } from "@xotoboil-multifront-singlespa/ui-vue";
+import { CrossEventDistributor } from "@xotoboil-multifront-singlespa/cross";
 
 import "./index.scss";
 
@@ -11,7 +11,7 @@ const lifecycles: SingleSpaVueLifecycles = singleSpaVue({
 	createApp,
 	appOptions: {
 		render() {
-			return h(App, { name: this.name, globalEventDistributor: (this as any).globalEventDistributor });
+			return h(App, { name: this.name, crossEventDistributor: (this as any).crossEventDistributor });
 		},
 	},
 	handleInstance(app: any) {
@@ -20,15 +20,15 @@ const lifecycles: SingleSpaVueLifecycles = singleSpaVue({
 	},
 });
 
-export const bootstrap: any = function (props: { globalEventDistributor: GlobalEventDistributor }) {
+export const bootstrap: any = function (props: { crossEventDistributor: CrossEventDistributor }) {
 	return lifecycles.bootstrap(props as any);
 };
 
-export const mount: any = function (props: { globalEventDistributor: GlobalEventDistributor }) {
+export const mount: any = function (props: { crossEventDistributor: CrossEventDistributor }) {
 	return lifecycles.mount(props as any);
 };
 
-export const unmount: any = function (props: { globalEventDistributor: GlobalEventDistributor }) {
+export const unmount: any = function (props: { crossEventDistributor: CrossEventDistributor }) {
 	return lifecycles.unmount(props as any);
 };
 

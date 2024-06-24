@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/typedef */
 const { merge } = require("webpack-merge");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-const commonConfig = require("./webpack.common");
+const crossConfiguration = require("./webpack.common");
 const deps = require("../package.json").dependencies;
 __webpack_base_uri__ = "http://localhost:8080";
 
@@ -35,4 +35,4 @@ const devConfig = {
 	],
 };
 
-module.exports = merge(commonConfig, devConfig);
+module.exports = merge(crossConfiguration, devConfig);

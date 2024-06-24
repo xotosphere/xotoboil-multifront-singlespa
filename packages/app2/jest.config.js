@@ -11,7 +11,7 @@ module.exports = {
 	testRegex: ".*\\.test\\.ts",
 	moduleNameMapper: {
 		"@/(.*)$": "<rootDir>/src/$1",
-		"@xotoboil-singlespa-multifront/ui-react": "<rootDir>../../registries/ui-react/src",
+		"@xotoboil-multifront-singlespa/ui-react": "<rootDir>../../registries/ui-react/src",
 	},
 	testEnvironment: "jsdom",
 };

@@ -4,7 +4,7 @@ import singleSpaReact from "single-spa-react";
 import { LifeCycleFn } from "single-spa";
 import { NavBar } from "./components/NavBar";
 import "./index.scss";
-import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
+import { CrossEventDistributor } from "@xotoboil-multifront-singlespa/cross";
 
 export const App: any = (): JSX.Element => <NavBar />;
 
@@ -14,8 +14,8 @@ const headerLifecycles = singleSpaReact({
 	rootComponent: App,
 });
 
-export const bootstrap: LifeCycleFn<{ globalEventDistributor: GlobalEventDistributor }> | LifeCycleFn<{ globalEventDistributor: GlobalEventDistributor }>[] = headerLifecycles.bootstrap;
-export const mount: LifeCycleFn<{ globalEventDistributor: GlobalEventDistributor }> | LifeCycleFn<{ globalEventDistributor: GlobalEventDistributor }>[] = headerLifecycles.mount;
-export const unmount: LifeCycleFn<{ globalEventDistributor: GlobalEventDistributor }> | LifeCycleFn<{ globalEventDistributor: GlobalEventDistributor }>[] = headerLifecycles.unmount;
+export const bootstrap: LifeCycleFn<{ crossEventDistributor: CrossEventDistributor }> | LifeCycleFn<{ crossEventDistributor: CrossEventDistributor }>[] = headerLifecycles.bootstrap;
+export const mount: LifeCycleFn<{ crossEventDistributor: CrossEventDistributor }> | LifeCycleFn<{ crossEventDistributor: CrossEventDistributor }>[] = headerLifecycles.mount;
+export const unmount: LifeCycleFn<{ crossEventDistributor: CrossEventDistributor }> | LifeCycleFn<{ crossEventDistributor: CrossEventDistributor }>[] = headerLifecycles.unmount;
 
 export default App;

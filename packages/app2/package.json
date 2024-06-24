@@ -1,5 +1,5 @@
 {
-	"name": "@xotoboil-singlespa-multifront/app2",
+	"name": "@xotoboil-multifront-singlespa/app2",
 	"private": true,
 	"version": "0.0.0",
 	"description": "app2 of the pack",
@@ -19,7 +19,7 @@
 		"single-spa-react": "^4.6.0"
 	},
 	"devDependencies": {
-		"@xotoboil-singlespa-multifront/ui": "*",
+		"@xotoboil-multifront-singlespa/ui": "*",
 		"postcss-loader": "^7.0.1",
 		"postcss-prefix-selector": "^1.16.0",
 		"@babel/core": "^7.16.0",

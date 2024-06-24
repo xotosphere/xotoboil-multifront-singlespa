@@ -14,8 +14,8 @@ describe("Counter", () => {
 
 		expect(screen.getByText("increment")).toBeDefined();
 		expect(screen.getByTestId("local_counter")).toBeDefined();
-		expect(screen.getByText("increment global")).toBeDefined();
-		expect(screen.getByTestId("global_counter")).toBeDefined();
+		expect(screen.getByText("increment cross")).toBeDefined();
+		expect(screen.getByTestId("cross_counter")).toBeDefined();
 	});
 });
 
@@ -40,8 +40,8 @@ describe("Increment", () => {
 	});
 });
 
-describe("Global Increment", () => {
-	test("should increase the global counter by clicking on increment global button and display on h2 element", () => {
+describe("Cross Increment", () => {
+	test("should increase the cross counter by clicking on increment cross button and display on h2 element", () => {
 		render(
 			<Provider store={store}>
 				<Counter />
@@ -49,8 +49,8 @@ describe("Global Increment", () => {
 		);
 
 		const fnDispatch = jest.spyOn(store, "dispatch");
-		const incrementBtn = screen.getByText("increment global");
-		const localCounterEle = screen.getByTestId("global_counter");
+		const incrementBtn = screen.getByText("increment cross");
+		const localCounterEle = screen.getByTestId("cross_counter");
 
 		expect(incrementBtn).toBeDefined();
 		expect(+localCounterEle.textContent.split(":")[1]).toBe(0);

@@ -1,5 +1,5 @@
 {
-	"name": "@xotoboil-singlespa-multifront/ui-vue",
+	"name": "@xotoboil-multifront-singlespa/ui-vue",
 	"version": "0.0.0",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
@@ -10,12 +10,12 @@
 		"clean": "rm -rf dist && rm -rf lib"
 	},
 	"peerDependencies": {
-		"@xotoboil-singlespa-multifront/ui": "*"
+		"@xotoboil-multifront-singlespa/ui": "*"
 	},
 	"dependencies": {
 		"vue": "^3.0.0"
 	},
 	"devDependencies": {
-		"@xotoboil-singlespa-multifront/ui": "*"
+		"@xotoboil-multifront-singlespa/ui": "*"
 	}
 }

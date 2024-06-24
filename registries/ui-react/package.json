@@ -1,5 +1,5 @@
 {
-	"name": "@xotoboil-singlespa-multifront/ui-react",
+	"name": "@xotoboil-multifront-singlespa/ui-react",
 	"version": "0.0.0",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
@@ -10,14 +10,14 @@
 		"clean": "rm -rf dist && rm -rf lib"
 	},
 	"peerDependencies": {
-		"@xotoboil-singlespa-multifront/ui": "*"
+		"@xotoboil-multifront-singlespa/ui": "*"
 	},
 	"dependencies": {
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2"
 	},
 	"devDependencies": {
-		"@xotoboil-singlespa-multifront/ui": "*",
+		"@xotoboil-multifront-singlespa/ui": "*",
 		"@types/react-dom": "^18.0.8",
 		"@types/react": "^18.0.24",
 		"@types/node": "18.11.3"

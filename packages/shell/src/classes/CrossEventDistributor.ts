@@ -1,8 +1,8 @@
-import { GlobalStore } from "./GlobalStore";
-import { GlobalEventDistributor as IGlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
+import { CrossStore } from "./CrossStore";
+import { CrossEventDistributor as ICrossEventDistributor } from "@xotoboil-multifront-singlespa/cross";
 
-export class GlobalEventDistributor implements IGlobalEventDistributor {
-	globalStore: GlobalStore = new GlobalStore();
+export class CrossEventDistributor implements ICrossEventDistributor {
+	crossStore: CrossStore = new CrossStore();
 
 	handlerList: { event: string; callback: Function }[] = [];
 

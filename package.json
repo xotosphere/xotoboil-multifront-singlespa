@@ -1,7 +1,7 @@
 {
-	"name": "@xotoboil-singlespa-multifront/multiframework-frontends",
+	"name": "@xotoboil-multifront-singlespa/multiframework-frontends",
 	"version": "0.0.0",
-	"description": "global multiframework",
+	"description": "multiframework",
 	"license": "ISC",
 	"private": true,
 	"workspaces": {
@@ -15,17 +15,17 @@
 		"start": "turbo run start --filter=./packages/*",
 		"build": "turbo run build --filter=./registries/*",
 		"clean": "turbo run clean",
-		"start:shell": "yarn workspace @xotoboil-singlespa-multifront/shell run start",
-		"start:portal": "yarn workspace @xotoboil-singlespa-multifront/portal run start",
-		"start:app1": "yarn workspace @xotoboil-singlespa-multifront/app1 run start",
-		"start:app2": "yarn workspace @xotoboil-singlespa-multifront/app2 run start",
-		"start:app3": "yarn workspace @xotoboil-singlespa-multifront/app3 run start",
+		"start:shell": "yarn workspace @xotoboil-multifront-singlespa/shell run start",
+		"start:portal": "yarn workspace @xotoboil-multifront-singlespa/portal run start",
+		"start:app1": "yarn workspace @xotoboil-multifront-singlespa/app1 run start",
+		"start:app2": "yarn workspace @xotoboil-multifront-singlespa/app2 run start",
+		"start:app3": "yarn workspace @xotoboil-multifront-singlespa/app3 run start",
 		"initialize": "yarn install --legacy-peer-deps",
 		"lint:es": "eslint -f codeframe --ignore-path .eslintignore --fix",
 		"lint:style": "stylelint --config .stylelintrc.js --fix",
 		"lint:prettify": "prettier --config .prettierrc.js --ignore-path .prettierignore --write .",
 		"test": "turbo run test --concurrency=1",
-		"test:e2e": "yarn workspace @xotoboil-singlespa-multifront/* run test:e2e"
+		"test:e2e": "yarn workspace @xotoboil-multifront-singlespa/* run test:e2e"
 	},
 	"devDependencies": {
 		"@types/jest": "^27.0.3",

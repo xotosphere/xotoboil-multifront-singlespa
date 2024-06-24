@@ -22,7 +22,7 @@ module.exports = {
 	output: {
 		path: path.resolve(process.cwd(), "lib"),
 		filename: "index.js",
-		library: "@xotoboil-singlespa-multifront/common",
+		library: "@xotoboil-multifront-singlespa/cross",
 		libraryTarget: "umd",
 		globalObject: "this",
 	},

@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { UiButton } from "@xotoboil-singlespa-multifront/ui-react";
+import { UiButton } from "@xotoboil-multifront-singlespa/ui-react";
 import { CounterModel } from "@/models/CounterModel";
-import store, { getGlobalEventDistributer } from "@/store";
-import { globalEventDistributor } from "@/index";
+import store, { getCrossEventDistributer } from "@/store";
+import { crossEventDistributor } from "@/index";
 
 export const Counter: any = (props: any): JSX.Element => {
 	const localCounter = useSelector((state: CounterModel) => state.counter.counter);
-	const [globalEventDistributerCounter, setGlobalEventDistributerCounterState] = useState(getGlobalEventDistributer() ? getGlobalEventDistributer().globalStore.counter : 0);
-	const setGlobalEventDistributerCounter = (value: number) => {
-		if (getGlobalEventDistributer()?.globalStore) {
-			getGlobalEventDistributer().globalStore.counter = value;
-			globalEventDistributor.emit("increment");
+	const [crossEventDistributerCounter, setCrossEventDistributerCounterState] = useState(getCrossEventDistributer() ? getCrossEventDistributer().crossStore.counter : 0);
+	const setCrossEventDistributerCounter = (value: number) => {
+		if (getCrossEventDistributer()?.crossStore) {
+			getCrossEventDistributer().crossStore.counter = value;
+			crossEventDistributor.emit("increment");
 		}
 	};
 	useEffect(() => {
 		let active = true;
-		globalEventDistributor.on("increment", () => {
-			if (active) setGlobalEventDistributerCounterState(getGlobalEventDistributer()?.globalStore?.counter);
+		crossEventDistributor.on("increment", () => {
+			if (active) setCrossEventDistributerCounterState(getCrossEventDistributer()?.crossStore?.counter);
 		});
 
 		return () => {
@@ -28,7 +28,7 @@ export const Counter: any = (props: any): JSX.Element => {
 	return (
 		<div>
 			<h2 data-testid="local_counter">Local Counter: {localCounter}</h2>
-			<h2 data-testid="global_counter">Global Counter: {globalEventDistributerCounter}</h2>
+			<h2 data-testid="cross_counter">Cross Counter: {crossEventDistributerCounter}</h2>
 			<div className="action">
 				<UiButton
 					onClick={() => {
@@ -37,7 +37,7 @@ export const Counter: any = (props: any): JSX.Element => {
 				>
 					increment
 				</UiButton>
-				<UiButton onClick={() => setGlobalEventDistributerCounter(globalEventDistributerCounter + 1)}>increment global</UiButton>
+				<UiButton onClick={() => setCrossEventDistributerCounter(crossEventDistributerCounter + 1)}>increment cross</UiButton>
 			</div>
 		</div>
 	);

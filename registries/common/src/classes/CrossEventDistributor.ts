@@ -1,7 +1,7 @@
-import { GlobalStore } from "./GlobalStore";
+import { CrossStore } from "./CrossStore";
 
-export interface GlobalEventDistributor {
-	globalStore: GlobalStore;
+export interface CrossEventDistributor {
+	crossStore: CrossStore;
 
 	handlerList: { event: string; callback: Function }[];
 

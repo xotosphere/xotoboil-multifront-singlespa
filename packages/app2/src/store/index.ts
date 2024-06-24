@@ -1,7 +1,7 @@
 import { combineReducers, createStore, Store } from "redux";
-import { globalEventDistributor } from "@/index";
+import { crossEventDistributor } from "@/index";
 import { counterReducer } from "@/store/reducers/counter.reducer";
-import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
+import { CrossEventDistributor } from "@xotoboil-multifront-singlespa/cross";
 
 const store: Store<any, any> = createStore(
 	combineReducers({
@@ -9,6 +9,6 @@ const store: Store<any, any> = createStore(
 	}),
 );
 
-export const getGlobalEventDistributer: Function = () => globalEventDistributor as GlobalEventDistributor;
+export const getCrossEventDistributer: Function = () => crossEventDistributor as CrossEventDistributor;
 
 export default store;
