@@ -4,7 +4,7 @@ import singleSpaReact from "single-spa-react";
 import { LifeCycleFn } from "single-spa";
 import { NavBar } from "./components/NavBar";
 import "./index.scss";
-import { GlobalEventDistributor } from "@xotoboil-multifront/common";
+import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 
 export const App: any = (): JSX.Element => <NavBar />;
 

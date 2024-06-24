@@ -2,8 +2,8 @@ import singleSpaVue, { SingleSpaVueLifecycles } from "single-spa-vue";
 import { h, createApp } from "vue";
 import App from "./App.vue";
 import store from "./store";
-import { ComponentLibrary } from "@xotoboil-multifront/ui-vue";
-import { GlobalEventDistributor } from "@xotoboil-multifront/common";
+import { ComponentLibrary } from "@xotoboil-singlespa-multifront/ui-vue";
+import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 
 import "./index.scss";
 

@@ -1,4 +1,4 @@
-import { GlobalEventDistributor } from "@xotoboil-multifront/common";
+import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 import { ReplaySubject } from "rxjs";
 import { AppProps } from "single-spa";
 

@@ -5,7 +5,7 @@ import { select, Store } from "@ngrx/store";
 import { CounterModel } from "../../models/CounterModel";
 import { selectCounter } from "../../store/reducers/counter.reducer";
 import { DecrementCounter, IncrementCounter, ResetCounter } from "../../store/actions/counter.actions";
-import { GlobalEventDistributor } from "@xotoboil-multifront/common";
+import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 
 @Component({
 	selector: "app-counter",

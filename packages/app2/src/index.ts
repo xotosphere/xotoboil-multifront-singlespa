@@ -1,4 +1,4 @@
-import { GlobalEventDistributor } from "@xotoboil-multifront/common";
+import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 export let globalEventDistributor: GlobalEventDistributor;
 import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";

@@ -1,5 +1,5 @@
 {
-	"name": "@xotoboil-multifront/portal",
+	"name": "@xotoboil-singlespa-multifront/portal",
 	"private": true,
 	"version": "0.0.0",
 	"scripts": {
@@ -17,7 +17,7 @@
 		"single-spa-react": "^4.6.0"
 	},
 	"devDependencies": {
-		"@xotoboil-multifront/ui": "*",
+		"@xotoboil-singlespa-multifront/ui": "*",
 		"@babel/core": "^7.16.0",
 		"@babel/plugin-transform-runtime": "^7.16.0",
 		"@babel/preset-env": "^7.16.0",

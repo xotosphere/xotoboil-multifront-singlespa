@@ -20,16 +20,16 @@ export const config: Config = {
 			],
 		},
 		vueOutputTarget({
-			componentCorePackage: "@xotoboil-multifront/ui",
+			componentCorePackage: "@xotoboil-singlespa-multifront/ui",
 			proxiesFile: "../ui-vue/src/components.ts",
 		}),
 		angularOutputTarget({
-			componentCorePackage: "@xotoboil-multifront/ui",
+			componentCorePackage: "@xotoboil-singlespa-multifront/ui",
 			directivesProxyFile: "../ui-angular/src/components.ts",
 			directivesArrayFile: "../ui-angular/src/directives.ts",
 		}),
 		reactOutputTarget({
-			componentCorePackage: "@xotoboil-multifront/ui",
+			componentCorePackage: "@xotoboil-singlespa-multifront/ui",
 			proxiesFile: "../ui-react/src/index.ts",
 			includeDefineCustomElements: true,
 		}),

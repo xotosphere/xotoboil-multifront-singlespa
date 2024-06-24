@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import Counter from "./components/Counter.vue";
-import { GlobalEventDistributor } from "@xotoboil-multifront/common";
+import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 import { Vue } from "vue-class-component";
 
 import { Model, Options, Prop } from "vue-property-decorator";

@@ -9,7 +9,7 @@ import { singleSpaAngular, getSingleSpaExtraProviders } from "single-spa-angular
 import { singleSpaPropsSubject } from "./single-spa/single-spa-props";
 import { SingleSpaProps } from "./single-spa/single-spa-props";
 import { AppProps, LifeCycleFn, LifeCycles } from "single-spa";
-import { GlobalEventDistributor } from "@xotoboil-multifront/common";
+import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 
 if (environment.production) enableProdMode();
 

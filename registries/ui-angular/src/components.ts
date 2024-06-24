@@ -3,7 +3,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, NgZone } from '@angular/core';
 import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
-import { Components } from '@xotoboil-multifront/ui';
+import { Components } from '@xotoboil-singlespa-multifront/ui';
 
 
 

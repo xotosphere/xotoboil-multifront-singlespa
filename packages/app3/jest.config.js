@@ -13,6 +13,6 @@ module.exports = {
 	},
 	moduleNameMapper: {
 		"@/(.*)$": "<rootDir>/src/$1",
-		"@xotoboil-multifront/ui-vue": "<rootDir>../../registries/ui-vue/src",
+		"@xotoboil-singlespa-multifront/ui-vue": "<rootDir>../../registries/ui-vue/src",
 	},
 };

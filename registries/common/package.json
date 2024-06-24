@@ -1,5 +1,5 @@
 {
-	"name": "@xotoboil-multifront/common",
+	"name": "@xotoboil-singlespa-multifront/common",
 	"version": "0.0.0",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",

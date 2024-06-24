@@ -1,5 +1,5 @@
 import { GlobalStore } from "./GlobalStore";
-import { GlobalEventDistributor as IGlobalEventDistributor } from "@xotoboil-multifront/common";
+import { GlobalEventDistributor as IGlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 
 export class GlobalEventDistributor implements IGlobalEventDistributor {
 	globalStore: GlobalStore = new GlobalStore();

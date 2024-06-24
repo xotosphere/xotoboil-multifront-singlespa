@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 import { StoreModule } from "@ngrx/store";
-import { UiLibrary } from "@xotoboil-multifront/ui-angular";
+import { UiLibrary } from "@xotoboil-singlespa-multifront/ui-angular";
 import { AppComponent } from "./app.component";
 import { CounterComponent } from "./components/counter/counter.component";
 import { rootReducer } from "./store/root-reducer";

@@ -14,9 +14,9 @@
 import store from "../store";
 import { Prop, Options, Watch } from "vue-property-decorator";
 import { Vue } from "vue-class-component";
-import { GlobalEventDistributor } from "@xotoboil-multifront/common";
+import { GlobalEventDistributor } from "@xotoboil-singlespa-multifront/common";
 
-import { UiButton } from "@xotoboil-multifront/ui-vue";
+import { UiButton } from "@xotoboil-singlespa-multifront/ui-vue";
 
 @Options({ name: "Counter", components: { UiButton } })
 export default class Counter extends Vue {

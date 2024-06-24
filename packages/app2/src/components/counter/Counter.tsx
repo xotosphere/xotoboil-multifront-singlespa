@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { UiButton } from "@xotoboil-multifront/ui-react";
+import { UiButton } from "@xotoboil-singlespa-multifront/ui-react";
 import { CounterModel } from "@/models/CounterModel";
 import store, { getGlobalEventDistributer } from "@/store";
 import { globalEventDistributor } from "@/index";

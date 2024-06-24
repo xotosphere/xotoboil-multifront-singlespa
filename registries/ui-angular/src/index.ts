@@ -2,7 +2,7 @@
 /* tslint:disable */
 import { NgModule } from "@angular/core";
 import { DIRECTIVES } from "./directives";
-import { defineCustomElements } from "@xotoboil-multifront/ui/loader";
+import { defineCustomElements } from "@xotoboil-singlespa-multifront/ui/loader";
 
 defineCustomElements();
 
